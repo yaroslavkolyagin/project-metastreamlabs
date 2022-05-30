@@ -16,7 +16,7 @@ function clean() { return del(['dist/*']) }
 function watch() {
 	browserSync.init({
 		server: { baseDir: "dist/" },
-		// tunnel: true
+		tunnel: true
 	});
 	gulp.watch('src/**/*.pug', layout);
 	gulp.watch('src/styles/**/*.scss', styles);
@@ -37,6 +37,7 @@ function layout() {
 function styles() {
 	return gulp.src([
 		'./node_modules/normalize.css/normalize.css',
+		'./node_modules/wow.js/css/libs/animate.css',
 		'./src/styles/main.scss'
 	])
 		.pipe(sass().on('error', sass.logError))
@@ -55,6 +56,7 @@ function styles() {
 function scripts() {
 	return gulp.src([
 		'./node_modules/jquery/dist/jquery.js',
+		'./node_modules/wow.js/dist/wow.js',
 		'./src/scripts/main.js'
 	])
 		.pipe(concat('bundle.js'))

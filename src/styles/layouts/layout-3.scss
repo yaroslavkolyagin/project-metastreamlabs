@@ -5,10 +5,12 @@
 	background-color: $clr-black;
 	background-image: url('../img/bg-layout-3.png');
 	background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	@media (max-width: $media-768)
 	{
+		background-attachment:initial;
 		padding: $rem * 50 0 $rem * 100 0;
 	}
 	@media (max-width: $media-480)
