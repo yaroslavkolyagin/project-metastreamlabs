@@ -1,0 +1,80 @@
+.layout-5
+{
+	background-color: $clr-black;
+	padding: $rem * 130 0 0 0;
+	background-image: url('../img/bg-footer.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media (max-width: $media-768)
+	{
+		padding: $rem * 100 0 0 0;
+	}
+	@media (max-width: $media-480)
+	{
+		padding: $rem * 60 0 0 0;
+	}
+	&__main
+	{
+		margin-bottom: $rem * 200;
+		@media (max-width: $media-768)
+		{
+			margin-bottom: $rem * 100;
+		}
+		@media (max-width: $media-480)
+		{
+			margin-bottom: $rem * 70;
+		}
+	}
+	&__title
+	{
+		margin-bottom: $rem * 20;
+	}
+	&__address
+	{
+		max-width: $rem * 350;
+		font-size: $rem * 25;
+		line-height: $rem * 32;
+		margin-bottom: $rem * 20;
+		@media (max-width: $media-768)
+		{
+			font-size: $rem * 20;
+			line-height: $rem * 26;
+			max-width: none;
+		}
+		@media (max-width: $media-768)
+		{
+			font-size: $rem * 18;
+			line-height: $rem * 23;
+		}
+	}
+	&__links
+	{
+		a
+		{
+			display: block;
+			color: $clr-theme;
+			font-size: $rem * 25;
+			line-height: $rem * 32;
+			margin-bottom: $rem * 5;
+			@media (max-width: $media-768)
+			{
+				font-size: $rem * 20;
+				line-height: $rem * 26;
+			}
+			@media (max-width: $media-480)
+			{
+				font-size: $rem * 18;
+				line-height: $rem * 23;
+			}
+			&:last-child
+			{
+				margin-bottom: 0;
+			}
+			&:hover
+			{
+				text-decoration: underline;
+			}
+		}
+	}
+}

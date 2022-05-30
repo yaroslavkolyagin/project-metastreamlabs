@@ -1,0 +1,25 @@
+.layout-2
+{
+	padding: $rem * 130 0 $rem * 65 0;
+	background-color: $clr-black;
+	@media (max-width: $media-768)
+	{
+		padding: $rem * 100 0 $rem * 50 0;
+	}
+	@media (max-width: $media-480)
+	{
+		padding: $rem * 60 0 $rem * 30 0;
+	}
+	&__title
+	{
+		margin-bottom: $rem * 50;
+		@media (max-width: $media-768)
+		{
+			margin-bottom: $rem * 25;
+		}
+		@media (max-width: $media-480)
+		{
+			margin-bottom: $rem * 20;
+		}
+	}
+}

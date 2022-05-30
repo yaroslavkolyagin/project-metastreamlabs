@@ -1,0 +1,36 @@
+// 1. Abstracts
+@import
+	'abstracts/variables',
+	'abstracts/mixins';
+
+// 2. Base
+@import
+	'base/reset',
+	'base/fonts',
+	'base/typography',
+	'base/base';
+
+// 3. Layouts
+@import
+	'layouts/header',
+	'layouts/layout-1',
+	'layouts/layout-2',
+	'layouts/layout-3',
+	'layouts/layout-4',
+	'layouts/layout-5',
+	'layouts/service-list',
+	'layouts/promo',
+	'layouts/footer';
+
+// 4. Components
+@import
+	'components/buttons',
+	'components/burger';
+
+// 5. Pages
+
+// 6. Themes
+
+// 7. Vendors
+
+// 8. Vendors-extension

@@ -1,0 +1,43 @@
+.burger
+{
+	cursor: pointer;
+	&:hover
+	{
+		.burger__item
+		{
+			background-color: $clr-theme;
+		}
+	}
+	&__item
+	{
+		position: relative;
+		width: $rem * 20;
+		height: $rem * 2;
+		background-color: $clr-white;
+		transition: $t;
+		&:nth-child(2)
+		{
+			margin: $rem * 4 0;
+		}
+	}
+	&--active
+	{
+		.burger__item
+		{
+			&:nth-child(1)
+			{
+				top: $rem * 6;
+				transform: rotate(45deg);
+			}
+			&:nth-child(2)
+			{
+				width: 0;
+			}
+			&:nth-child(3)
+			{
+				transform: rotate(-45deg);
+				top: $rem * -6;
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+.promo
+{
+	display: flex;
+	background-color: #091B56;
+	@media (max-width: $media-1024)
+	{
+		flex-flow: column-reverse;
+	}
+	&--mirror
+	{
+		flex-flow: row-reverse;
+			@media (max-width: $media-1024)
+		{
+			flex-flow: column-reverse;
+		}
+	}
+	&__info
+	{
+		width: 50%;
+		min-width: 50%;
+		padding: $rem * 160 5%;
+		box-sizing: border-box;
+		@media (max-width: $media-1024)
+		{
+			width: 100%;
+			padding: $rem * 75 5%;
+		}
+		@media (max-width: $media-480)
+		{
+			padding: $rem * 50 5%;
+		}
+		&-title
+		{
+			margin-bottom: $rem * 30;
+		}
+		&-text
+		{
+			font-size: $rem * 18;
+			line-height: $rem * 25;
+		}
+	}
+	&__picture
+	{
+		position: relative;
+		width: 50%;
+		min-width: 50%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		@media (max-width: $media-1024)
+		{
+			width: 100%;
+			height: $rem * 500;
+		}
+		@media (max-width: $media-480)
+		{
+			height: $rem * 300;
+		}
+		&::after
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			background: rgba(0, 72, 255, 0.1);
+		}
+	}
+}

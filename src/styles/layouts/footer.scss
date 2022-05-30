@@ -1,0 +1,21 @@
+.footer
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: $rem * 50 0;
+	font-size: $rem * 16;
+	line-height: $rem * 16;
+	opacity: .5;
+	@media (max-width: $media-480)
+	{
+		padding: $rem * 25 0;
+	}
+	&__logo
+	{
+		&-accent
+		{
+			color: $clr-theme;
+		}
+	}
+}

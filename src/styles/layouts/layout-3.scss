@@ -1,0 +1,35 @@
+.layout-3
+{
+	padding-top: $rem * 65;
+	padding-bottom: $rem * 130;
+	background-color: $clr-black;
+	background-image: url('../img/bg-layout-3.png');
+	background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	@media (max-width: $media-768)
+	{
+		padding: $rem * 50 0 $rem * 100 0;
+	}
+	@media (max-width: $media-480)
+	{
+		padding: $rem * 30 0 $rem * 60 0;
+	}
+	&__title
+	{
+		max-width: $rem * 700;
+		margin-bottom: $rem * 50;
+		@media (max-width: $media-768)
+		{
+			margin-bottom: $rem * 25;
+		}
+		@media (max-width: $media-480)
+		{
+			margin-bottom: $rem * 20;
+		}
+	}
+	&__text
+	{
+		max-width: $rem * 650;
+	}
+}

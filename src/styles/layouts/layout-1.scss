@@ -1,0 +1,45 @@
+.layout-1
+{
+	background-image: url('../img/bg-layout-1.jpg');
+	background-position: left top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: $rem * 100;
+	@media (max-width: $media-768)
+	{
+		background-image: url('../img/bg-layout-1--tablet.jpg');
+		padding-bottom: $rem * 80;
+	}
+	@media (max-width: $media-480)
+	{
+		background-image: url('../img/bg-layout-1--mobile.jpg');
+		padding-bottom: $rem * 60;
+	}
+	&__main
+	{
+		margin-top: $rem * 160;
+		@media (max-width: $media-768)
+		{
+			margin-top: $rem * 280;
+		}
+		@media (max-width: $media-480)
+		{
+			margin-top: $rem * 90;
+		}
+		&-title
+		{
+			max-width: $rem * 880;
+			margin-bottom: $rem * 30;
+			@media (max-width: $media-768)
+			{
+				margin-bottom: $rem * 20;
+			}
+		}
+		&-description
+		{
+			max-width: $rem * 525;
+			font-size: $rem * 22;
+			line-height: $rem * 30;
+		}
+	}
+}

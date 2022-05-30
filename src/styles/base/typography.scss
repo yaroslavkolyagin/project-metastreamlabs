@@ -1,0 +1,30 @@
+.title-1
+{
+	font-size: $rem * 70;
+	line-height: $rem * 77;
+	@media (max-width: $media-768)
+	{
+		font-size: $rem * 50;
+		line-height: $rem * 55;
+	}
+	@media (max-width: $media-480)
+	{
+		font-size: $rem * 38;
+		line-height: $rem * 40;
+	}
+}
+.title-2
+{
+	font-size: $rem * 60;
+	line-height: $rem * 60;
+	@media (max-width: $media-768)
+	{
+		font-size: $rem * 45;
+		line-height: $rem * 45;
+	}
+	@media (max-width: $media-480)
+	{
+		font-size: $rem * 30;
+		line-height: $rem * 30;
+	}
+}
