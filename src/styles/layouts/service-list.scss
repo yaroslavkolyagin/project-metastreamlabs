@@ -34,11 +34,11 @@
 		}
 		&:nth-child(1)
 		{
-			background: linear-gradient(90deg, rgba(20, 58, 255, 0.4), rgba(20, 58, 255, 0.3));
+			background: linear-gradient(90deg, rgba(20, 58, 255, 0.5), rgba(20, 58, 255, 0.4));
 		}
 		&:nth-child(2)
 		{
-			background: linear-gradient(90deg, rgba(20, 58, 255, 0.3), rgba(20, 58, 255, 0.2));
+			background: linear-gradient(90deg, rgba(20, 58, 255, 0.4), rgba(20, 58, 255, 0.3));
 			@media (max-width: $media-480)
 			{
 				background: linear-gradient(90deg, rgba(20, 58, 255, 0.4), rgba(20, 58, 255, 0.3));
@@ -46,7 +46,7 @@
 		}
 		&:nth-child(3)
 		{
-			background: linear-gradient(90deg, rgba(20, 58, 255, 0.2), rgba(20, 58, 255, 0.1));
+			background: linear-gradient(90deg, rgba(20, 58, 255, 0.3), rgba(20, 58, 255, 0.2));
 			@media (max-width: $media-1024)
 			{
 				margin-bottom: 0;
