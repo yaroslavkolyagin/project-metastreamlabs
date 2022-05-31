@@ -74,13 +74,14 @@
 				{
 					font-size: $rem * 15;
 					color: $clr-white;
+					transition: $t;
 					@media (max-width: $media-480)
 					{
 						font-size: $rem * 20;
 					}
 					&:hover
 					{
-						text-decoration: underline;
+						color: $clr-theme-light;
 					}
 				}
 			}
@@ -102,8 +103,9 @@
 			}
 			&:hover
 			{
-				border: $rem * 1 solid $clr-theme;
-				background-color: $clr-theme;
+				border: $rem * 1 solid $clr-white;
+				background-color: $clr-white;
+				color: $clr-theme;
 			}
 		}
 	}
